@@ -18,19 +18,34 @@
 
     <dependencies>
         <dependency>
-            <groupId>hep.sld</groupId>
-            <artifactId>jazelle</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>jar</scope>          
-        </dependency>    
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>jazelle</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.freehep</groupId>
+            <artifactId>jas2</artifactId>
+            <version>2.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.freehep</groupId>
+            <artifactId>hep2</artifactId>
+            <version>2.2.5</version>
+        </dependency>
     </dependencies>
-
+    <repositories>
+        <repository>
+            <id>freehep-maven</id>
+            <name>Maven FreeHEP</name>
+            <url>https://java.freehep.org/maven2</url>
+        </repository>
+    </repositories>
     <build>
     </build>
 </project>

@@ -2,6 +2,7 @@ package hep.sld.jas;
 import hep.analysis.*;
 import hep.sld.jazelle.*;
 import hep.sld.jazelle.family.*;
+import java.util.Enumeration;
 
 public class SLDEvent implements EventHeader
 {
@@ -31,4 +32,9 @@ public class SLDEvent implements EventHeader
 		return null;
 	}
 	private Jazelle jazelle = Jazelle.instance();
+
+    @Override
+    public Enumeration keys() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

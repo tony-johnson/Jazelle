@@ -11,7 +11,7 @@
     
     <modules>
         <module>jazelle</module>
-        <!-- <module>jas</module> -->
+        <module>jas</module>
     </modules>
 
 </project>
